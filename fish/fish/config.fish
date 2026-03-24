@@ -4,7 +4,7 @@ zoxide init fish | source
 starship init fish | source
 
 # general
-alias m='micro'
+alias n='nvim'
 alias y='yazi'
 alias c='clear'
 alias nm='nmtui'
