@@ -41,6 +41,17 @@ alias backup-dots='rsync -av --delete ~/.config/fish ~/.dotfiles/fish
 rsync -av --delete ~/.config/bspwm ~/.dotfiles/bspwm
 rsync -av --delete ~/.config/sxhkd ~/.dotfiles/sxhkd
 rsync -av --delete ~/.config/yazi ~/.dotfiles/yazi'
+###
+alias sync-dots=' rsync -av --delete ~/.config/fish ~/.dotfiles/fish
+    rsync -av --delete ~/.config/bspwm ~/.dotfiles/bspwm
+    rsync -av --delete ~/.config/sxhkd ~/.dotfiles/sxhkd
+    rsync -av --delete ~/.config/yazi ~/.dotfiles/yazi
+    cd ~/.dotfiles
+    git add .
+    git commit -m "Sync updated configs"
+    git push
+    cd /home/lrosebrough
+    echo "Git Repo Synced..."'
 
 # function fish_greeting
 #     echo (set_color blue)(date +%d-%m-%Y) : (set_color yellow)(date +%T)
