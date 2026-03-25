@@ -1,5 +1,5 @@
-set -Ux EDITOR micro
-set -Ux VISUAL micro
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
 zoxide init fish | source
 starship init fish | source
 
