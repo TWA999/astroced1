@@ -30,7 +30,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = 'micro "$@"', desc = "micro", block = true }
+	{ run = 'nvim "$@"', desc = "nvim", block = true }
 ]
 
 play = [
